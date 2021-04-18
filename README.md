@@ -1,9 +1,9 @@
-##What is this project
+## What is this project
 
     This is a project for the odin project curriculum. The idea is to make a
     rock paper scissors game with js playable within the js console.
 
-##Pre project thoughts
+## Pre project thoughts
 
     This is going to be the most complicated thing I've done with js
     so far so this should be fun. Here I'll lay out my plan:
@@ -21,6 +21,6 @@
     gui to the site instead of having the game played solely
     in the console. But one thing at a time.
 
-##Post project thoughts
+## Post project thoughts
 
     Update once done
