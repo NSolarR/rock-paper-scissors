@@ -1,0 +1,51 @@
+body {
+    background-color:black;
+    color:white;
+}
+
+
+.game {
+    position: relative;
+    float:left;
+    left:10%;
+}
+
+.buttons {
+    position: absolute;
+    top: 300%;
+    left: 70%;
+    display:flex;
+    scale: 2.0;
+    margin: 10px;
+}
+
+.buttons button {
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.log {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    float:right;
+    border-style: solid;
+    border-color:white;
+    width:40%;
+    height: 75%;
+    right: 10%;
+    top: 10%;
+
+    scrollbar-color: black;
+}
+
+.log button {
+    position: fixed;
+}
+
+.history {
+    margin-top:45px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js"></script> 
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-       <h1>To play, type 'game();' in the console without the quotes.</h1>
+        <div class="game">
+            <p id="playerScoreT"></p>
+            <p id="computerScoreT"></p>
+
+            <div class="buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+        </div>
+       
+        <div class="log">
+            <button class="clear">Clear Log</button>
+            <p class="history"></p>
+        </div>
     </body>
+
+    <script src="script.js"></script> 
 </html>
