@@ -11,6 +11,7 @@ const paperButton = document.querySelector('#paper');
 const scissorsButton = document.querySelector('#scissors');
 const clearButton = document.querySelector('.clear');
 
+const logDiv = document.querySelector('.log');
 const gameLog = document.querySelector('.history');
 
 gameLog.setAttribute('style', 'white-space: pre;');
@@ -62,15 +63,18 @@ function round(x,y){
        (x == 'paper' && y == 'rock') ||
        (x == 'scissors' && y =='paper')) {
             gameLog.textContent += (`--> You win ${x} beats ${y}\r\n`);
+            logDiv.scrollTop = logDiv.scrollHeight;
             playerScore++
             winCondition(playerScore,computerScore);
             updateScoreText();
             return;
        } else if (x == y){
             gameLog.textContent += (`--> It's a tie\r\n`)
+            logDiv.scrollTop = logDiv.scrollHeight;
             return playerScore && computerScore;
        } else {
             gameLog.textContent += (`--> You lose ${x} loses to ${y}\r\n`);
+            logDiv.scrollTop = logDiv.scrollHeight;
             computerScore ++; 
             winCondition(playerScore,computerScore);
             updateScoreText();
@@ -83,17 +87,20 @@ function winCondition() {
     if (playerScore >= 5 || computerScore >= 5){
         gameLog.textContent += ("\r\n");
         gameLog.textContent += (`The final score is: Player: ${playerScore} Computer: ${computerScore}\r\n`);
+        logDiv.scrollTop = logDiv.scrollHeight;
         
         if (playerScore > computerScore) {
             //gameLog.style.color = "green";
             gameLog.textContent += ("You win!\r\n");
             gameLog.textContent += ("\r\n");
+            logDiv.scrollTop = logDiv.scrollHeight;
             //gameLog.style.color = "white";
         }
         else {
             //gameLog.style.color = "red";
             gameLog.textContent += ("You lose!\r\n");
             gameLog.textContent += ("\r\n");
+            logDiv.scrollTop = logDiv.scrollHeight;
             //gameLog.style.color = "white";
         }
 
