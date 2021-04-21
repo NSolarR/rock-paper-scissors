@@ -3,6 +3,13 @@ body {
     color:white;
 }
 
+#playerScoreT {
+    font-size:24px;
+}
+
+#computerScoreT {
+    font-size:24px;
+}
 
 .game {
     position: relative;
